@@ -72,16 +72,16 @@ For the questions below, please make use of the OpenShift CLI (oc) where applica
     * The volume can be mounted as read-write by more than one node.
 # General
 * How would you ensure any change made to this Dockerfile is source controlled, approved, tested and deployed. Explain which tools you will use as if this was going into a production environment.
-* 
-``1. Source control the Dockerfile with git/Github (or any VCS/SCM tool).``
 
-``2. Gating needs to be implemented during all stages of build/release (CI/CD). Any changes made to the test/QA branch needs to be approved via pull request (PR) and code review of the changes. (GitHub Actions, Azure DevOps or any CI/CD, Build/Release pipeline tools)`` 
+**``1. Source control the Dockerfile with git/Github (or any VCS/SCM tool).``**
 
-``3. Automated tests using CST (Container Structure Tests) before deploy/release (this is a Google build automation tool)``
+**``2. Gating needs to be implemented during all stages of build/release (CI/CD). Any changes made to the test/QA branch needs to be approved via pull request (PR) and code review of the changes. (GitHub Actions, Azure DevOps or any CI/CD, Build/Release pipeline tools)``**
 
-``4. Build and push image to container repo (Docker Hub, ACR, etc)`` 
+**``3. Automated tests using CST (Container Structure Tests) before deploy/release (this is a Google build automation tool)``**
 
-``5. This only needs to be done once, preferably when deploying from dev to test/QA stage enviroment``
+**``4. Build and push image to container repo (Docker Hub, ACR, etc)``**
+
+**``5. This only needs to be done once, preferably when deploying from dev to test/QA stage enviroment``**
 
 * Commit and push your changes.
 	* **`Done and commited`** 
