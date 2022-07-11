@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author: Ryan Pillay (ryanpillayza@protonmail.com)
 # for use in bash/shell environments only
 # Make sure this script is executable (sudo chmod +x listit.sh)
 # Accepts and uses 1 input parameter (type integer) via $1 ARG. This is used to print X amount of lines in the file directories.list
