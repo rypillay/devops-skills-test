@@ -1,0 +1,13 @@
+apiVersion: template.openshift.io/v1
+kind: PersistentVolumeClaim
+metadata:
+ name: zod 
+spec: 
+  accessModes:
+    - ReadWriteMany
+  volumes:
+  - name: zod
+    persistentVolumeClaim:
+      claimName: zod
+  Capacity:
+    storage: 5Gi
