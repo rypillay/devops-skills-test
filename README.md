@@ -84,3 +84,4 @@ For the questions below, please make use of the OpenShift CLI (oc) where applica
 ``5. This only needs to be done once, preferably when deploying from dev to test/QA stage enviroment``
 
 * Commit and push your changes.
+	* **`Done and commited`** 
