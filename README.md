@@ -11,16 +11,26 @@ Please use this template to create your own repository of this test and share yo
 * When you've completed all the questions, share your repository with us by sending us the repo's URL.
 # Linux
 * What is the command to list the contents of a direcory, line by line and ordered by size ascending in human readable format?
+	* **`ls -lSahr`**
 * How would you add a DNS server to a network interface in Linux?
+	* **`echo "nameserver ${DNSIP}" >> /etc/resolv.conf`**
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
+	* **`echo " ${IP} ${HOSTNAME}" >> /etc/hosts`**
 * How would you check for SELinux related errors?
+	* **`Look at SELinux error logs ("less /var/log/audit/audit.log" and/or "less /var/log/messages")`**
 * Write the commands to add 30GB disk space to a logical volume named "docker" that belongs to a logical group named "docker-group".
+	* **`vgs`**
+	* **`lvs`**
+	* **`df -h`**
+	* **`lvextend -l +30G /${FILESYSTEM_DOCKER}`**
+	* **`resize2fs /${FILESYSTEM_DOCKER}`**
 * In the root of this repository, create a Bash script called "listit.sh", when executed, this script must do the following (in order):
     * Create a file called directories.list that contains the directory names only of the current directory.
     * Add a line at the beginning of the directories.list file that reads "line one's line".
     * Output the first three lines of directories.list on the console.
     * Accept an integer parameter when executed and repeat the previous question's output x amount of times based on the parameter provided at execution.
 * Commit and push your changes.
+   * `**Done and commited**` 
 
 # Docker
 * In the root of this repository, create a Dockerfile that is based on the latest mariadb image.
