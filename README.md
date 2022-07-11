@@ -50,15 +50,22 @@ Please use this template to create your own repository of this test and share yo
 * Create an encrypted file called "secret" in the root of this repository that contains the root password of the database (the password must be "thisisadatabasepassword123456789!").
 * Change your Bash script to start the conainer using the root password from the "secret" file.
 * Commit and push your changes.
+ * **`Done and commited`**
 
 # OpenShift / OKD
 For the questions below, please make use of the OpenShift CLI (oc) where applicable.
 * Write the command used to login to a remote OpenShift cluster.
+* **`oc login $SERVER:$PORT`**
 * Write the command to add the "cluster-admin" cluster role to a user called "clark".
+* **`oc adm policy add-role-to-user cluster-admin clark`**
 * Write the command used to list all pods in the "smallville" project (namespace).
+* **`oc get pods -n smallville`**
 * Write the command to scale an application (deployment config) called "dailyplanet" to 2 pods.
+* **`oc scale dc dailyplanet --replicas=2`**
 * Write the command to gain remote shell access to a pod called "lex" in the "smallville" project (namespace).
+* **`oc rsh lex -n smallville`**
 * Write the command to export a secret called "loislane" in JSon format, the secret is in the "dailyplanet" project (namespace).
+* **`oc export secret name=loislane --output="json"`**
 * Add a file called "Krypton" (in YAML format) to this repo that contains the resource defintion for a Persistent Volume Claim with the following properties:
     * Points to a Persistent Volume called "zod".
     * Requests 5GB of storage.
