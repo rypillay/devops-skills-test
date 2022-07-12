@@ -75,7 +75,7 @@ For the questions below, please make use of the OpenShift CLI (oc) where applica
 
 **``1. Source control the Dockerfile with git/Github (or any VCS/SCM tool).``**
 
-**``2. Gating needs to be implemented during all stages of build/release (CI/CD). Any changes made to the test/QA branch needs to be approved via pull request (PR) and code review of the changes. (GitHub Actions, Azure DevOps or any CI/CD, Build/Release pipeline tools)``**
+**``2. Gating needs to be implemented during all stages of build/release (CI/CD). Any changes made to the 'main' branch needs to be approved via pull request (PR) and code review of the changes. (GitHub Actions, Azure DevOps or any CI/CD, Build/Release pipeline tools). Automation can be performed throughout the pipeline but manual appoval is required to deploy/release to live/production environment.``**
 
 **``3. Automated tests using CST (Container Structure Tests) before deploy/release (this is a Google build automation tool)``**
 
